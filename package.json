@@ -1,0 +1,22 @@
+{
+  "name": "restfulapi",
+  "version": "1.0.0",
+  "description": "building a restful API with node express and mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianmsantos/RestfulApi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianmsantos/RestfulApi/issues"
+  },
+  "homepage": "https://github.com/brianmsantos/RestfulApi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
