@@ -10,11 +10,13 @@ const bodyParser = require('body-parser');
 //pulls in our dotenv file which hides our password which we pass down to mongoose.connect as 'process.env.DB_CONNECTION,'
 require('dotenv/config');
 
-//Import Routes
-const postsRoutes = require('./routes/posts')
-
 //Use a middleware
-app.use('/posts', postsRoutes)
+app.use(bodyParser.json());
+
+//Import Routes
+const postsRoutes = require('./routes/posts');
+
+app.use('/posts', postsRoutes);
 
 //Routes Pass the route and you have your request and response
 app.get('/', (req, res) => {
