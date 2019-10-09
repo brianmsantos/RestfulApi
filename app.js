@@ -6,11 +6,13 @@ const app = express();
 const mongoose = require('mongoose');
 //import body-parser
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 //pulls in our dotenv file which hides our password which we pass down to mongoose.connect as 'process.env.DB_CONNECTION,'
 require('dotenv/config');
 
 //Use a middleware
+app.use(cors());
 app.use(bodyParser.json());
 
 //Import Routes
