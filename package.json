@@ -4,19 +4,20 @@
   "description": "building a restful API with node express and mongo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brianmsantos/RestfulApi.git"
   },
-  "author": "",
+  "author": "Brian Santos",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brianmsantos/RestfulApi/issues"
   },
   "homepage": "https://github.com/brianmsantos/RestfulApi#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3"
   }
 }
